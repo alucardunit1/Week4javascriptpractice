@@ -14,7 +14,7 @@ Roadmap
 
 Contact
 
-Author: robert.mccreary@codex.academy
+Author: Cody Estes
 Acknowledgements
 
     JavaScript Operators
