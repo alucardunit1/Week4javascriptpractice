@@ -73,7 +73,7 @@
     <p>POP QUIZ: what is the value at x=20?</p>
     <pre>
     f(20) = 20 * .25 + 5
-    f(20) = ?
+    f(20) = 10
   </pre
     >
 
@@ -175,19 +175,25 @@
     <p>
       For x = 15... g(x) =
       <script>
-        z3 = g();
-        document.write();
+        z3 = g(15);
+        document.write(z3);
       </script>
     </p>
     <h4>TODO: You try this one!</h4>
     <p>
-      For x = 21... g(x) = ?
-      <script></script>
+      For x = 21... g(x) = 
+      <script>
+        z4 = g(21);
+        document.write(z4);
+      </script>
     </p>
     <h4>TODO: You try this one!</h4>
     <p>
-      For x = 1001... g(x) = ?
-      <script></script>
+      For x = 1001... g(x) = 
+      <script>
+        z5 = g(1001);
+        document.write(z5)
+      </script>
     </p>
 
     <h3>You Try it!</h3>
@@ -197,6 +203,52 @@
       the cash that the shop has earned after x days. Then caclulate that for 5,
       10, 15, 21 and 1001 days.
     </p>
+    <script>
+      let x1;
+      let x2;
+      let x3;
+      let x4;
+      let x5;
+
+      function g(x) {
+        return x * 1.5 + 5;
+      }
+    </script>
+    <p>
+      For x = 5... g(x) =
+      <script>
+        x1 = g(5);
+        document.write(x1);
+      </script>
+    </p>    
+    <p>
+      For x = 10... g(x) =
+      <script>
+        x2 = g(10);
+        document.write(x2);
+      </script>
+    </p>
+    <p>
+      For x = 15... g(x) =
+      <script>
+        x3 = g(15);
+        document.write(x3);
+      </script>
+    </p>
+    <p>
+      For x = 21... g(x) =
+      <script>
+        x4 = g(21);
+        document.write(x4);
+      </script>
+    </p>
+    <p>
+      For x = 1001... g(x) =
+      <script>
+        x5 = g(1001);
+        document.write(x5);
+      </script>
+    </p>
 
     <h4>TODO: You try this one!</h4>
     <p>
@@ -204,12 +256,85 @@
       functions. Write the code to write the results of the functions to the
       page.
     </p>
+    <h3>Operation Cost</h3>
+    <p>
+      Here we will take out the cost per cone per day. The current cost is .5 per cone.
+    </p>
+    <script>
+      let day1;
+      let day2;
+      let day3;
+      let day4;
+      let day5;
+
+
+      function g(day) {
+        return day * 1.5 + 5 - ( day * .5 );
+      }
+    </script>
+    <p>
+      For day = 5... g(x) =
+      <script>
+        day1 = g(5);
+        document.write(day1);
+      </script>
+    </p>    
+    <p>
+      For day = 10... g(x) =
+      <script>
+        day2 = g(10);
+        document.write(day2);
+      </script>
+    </p>
+    <p>
+      For day = 15... g(x) =
+      <script>
+        day3 = g(15);
+        document.write(day3);
+      </script>
+    </p>
+    <p>
+      For day = 21... g(x) =
+      <script>
+        day4 = g(21);
+        document.write(day4);
+      </script>
+    </p>
+    <p>
+      For day = 1001... g(x) =
+      <script>
+        day5 = g(1001);
+        document.write(day5);
+      </script>
+    </p>
 
     <h4>Bonus:</h4>
     <p>
       Try out some more functions for different business senarios. As an extra
       bonus, you might try two variables! For example f(a,b) = a*2 + b. What
       could such a function represent in the business scenario?
+    </p>
+    <script>
+      let var1;
+      let var2;
+      let var3;
+      let var4;
+      let var5;
+
+
+      function g(man, time) {
+        return man * 9.5 + .5 - ( time * .95 );
+      }
+    </script>
+    <p>
+      For man = 5 time = 2.9... g(man, time) =
+      <script>
+        var1 = g(5, 2.9);
+        document.write(var1);
+      </script>
+    </p>
+    <p>
+      This could be used to calculate how much labor would cost on a job
     </p>
   </body>
 </html>
